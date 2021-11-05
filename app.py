@@ -17,9 +17,9 @@ mysql = MySQL(app)
 def login():
     error = None
     if request.method == "POST": 
-        if request.form['username_input'] == "db2admin" and request.form['pwd_input'] == "abc123":
+        if request.form['username_input'] == "HospitalPR" and request.form['pwd_input'] == "a1234":
             return redirect(url_for("options"))
-        elif request.form['username_input'] != "db2admin" or request.form['pwd_input'] != "abc123":
+        elif request.form['username_input'] != "HospitalPR" or request.form['pwd_input'] != "a1234":
             flash('Wrong username or password!')
             return render_template("login.html")
     return render_template("login.html", error=error)  
@@ -79,6 +79,8 @@ def results(search,opt):
             if count == 0:
                 return render_template("no-results.html")
             return render_template("results.html", search = rv, count = count)
+
+
 
 @app.route('/add-patient', methods=["POST", "GET"])
 def addp():
