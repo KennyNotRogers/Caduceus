@@ -25,7 +25,7 @@
 
     <div class="logo-link">
         <a href="http://127.0.0.1:5000/options">
-            <img src="{{ url_for('static', filename='logo.PNG') }}" alt="MediBase logo"> 
+            <img src="{{ url_for('static', filename='logo.PNG') }}" alt="Caduceus logo"> 
         </a>
     </div>
 
@@ -33,7 +33,7 @@
 
     <form class="search-form" id="search-form" action="" method="POST">
         <div class="title">
-            <h3 class="search-title">Patient Search</h3>
+            <h3 class="search-title">Patient Search (Note: The default search method is by name basis)</h3>
         </div>
         
         <div class="input">
@@ -41,14 +41,14 @@
         </div>
         
         
-        <input type="submit" class="search-button"  value="Search" onclick="window.location.href='http://127.0.0.1:5000/results'">
+        <input type="submit" class="search-button" value="Search" onclick="window.location.href='http://127.0.0.1:5000/results'">
 
         
 
         <div class="radio-buttons">
             <div class="byname">
-                <input type="radio" id="by-name" name="option" value="1">
-                <label for="by-name"><b>by name</b></label><br>
+                <input type="radio" id="by-name" name="option" value="1"checked>
+                <label for="by-name"selected><b>by name</b></label><br>
             </div>
             
             <div class="byic">

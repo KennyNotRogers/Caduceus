@@ -26,15 +26,15 @@
             <div class="patidbook"><label for="pat_id"><b>Patient ID</b></label></div>
             <div class="form-control13"><input type="text" name="pat_id" id="pat_id" placeholder="..."><br></div>
 
-            <div class="bookdate"><label for="book_date"><b>Booking Date (YYYY-MM-DD)</b></label></div>
-            <div class="form-control14"><input type="text" name="book_date" id="book_date" placeholder="..."><br></div>
+            <div class="bookdate"><label for="book_date"><b>Booking Date (DD-MM-YYYY)</b></label></div>
+            <div class="form-control14"><input type="date" name="book_date" id="book_date" placeholder="..."><br></div>
 
             <div class="form-control15"><input type="submit" class="book-button" value="Book Appointment" onclick="window.location.href='http://127.0.0.1:5000/booking'"></div>
         </form>
     
         <div class="logo-link">
             <a href="http://127.0.0.1:5000/options">
-                <img src="{{ url_for('static', filename='logo.PNG') }}" alt="MediBase logo"> 
+                <img src="{{ url_for('static', filename='logo.PNG') }}" alt="Caduceus logo"> 
             </a>
         </div>
 
